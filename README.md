@@ -26,7 +26,7 @@
 
 ## command = enable
 1. เมื่อ command เป็น enable ให้นักศึกษาที่มี studentID ทำการ enable หรือ no shutdown interface loopbackStudentID 
-2. ยกตัวอย่างเช่น หากนักศึกษามี studentID 66070123 เมื่อได้รับข้อความ "/66070123 enable" ให้ทำการ enable หรือ no shutdown loopback interface 66070123 และส่งข้อความ "Interface loopback 66070123 is enabled successfully" ไปที่ NPA2023 Webex Team room
+2. ยกตัวอย่างเช่น หากนักศึกษามี studentID 66070123 เมื่อได้รับข้อความ "/66070123 disable" ให้ทำการ enable หรือ no shutdown loopback interface 66070123 และส่งข้อความ "Interface loopback 66070123 is enabled successfully" ไปที่ NPA2023 Webex Team room
 3. แต่หากยังไม่มี loopback interface 66070123 ใน Router ให้ส่งข้อความ "Cannot enable: no interface loopback 66070123"
 
 ## command = disable
