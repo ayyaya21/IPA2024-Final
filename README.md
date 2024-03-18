@@ -15,7 +15,7 @@
 
 ## command = create
 1. เมื่อ command เป็น create ให้นักศึกษาที่มี studentID ทำการสร้าง interface loopbackStudentID 
-2. หากที่ Router ยังไม่มี interface loopbackStudentID ให้ทำการสร้าง Interface loopbackStudentID ขึ้นมาก่อน หากมีอยู่แล้วไม่จำเป็นต้องสร้างอีก
+2. หากที่ Router ยังไม่มี interface loopbackStudentID ให้ทำการสร้าง Interface loopbackStudentID ขึ้นมา หากมีอยู่แล้วไม่จำเป็นต้องสร้างอีก
 3. ยกตัวอย่างเช่น หากนักศึกษามี studentID 66070123 เมื่อได้รับข้อความ "/66070123 create" ให้ทำการ สร้าง loopback interface 66070123 โดยมี IP address เป็น Private IP 172.30.xxx.1/24 (ในที่นี้ xxx = 123 เนื่องจากเป็นเลข 3 หลักสุดท้ายของ studentID) แต่หากมี loopback interface 66070123 ใน Router อยู่แล้วก็ไม่จำเป็นต้องสร้างใหม่
 4. เมื่อสร้าง interface loopback 66070123 แล้ว ให้ส่งข้อความ "Interface loopback 66070123 is created successfully" ไปที่ NPA2023 Webex Team room แต่ถ้ามี Interface loopback 66070123 อยู่แล้ว ก็ให้ส่งข้อความ "Cannot create: Interface loopback 66070123 is already existed"
 
@@ -38,5 +38,5 @@
 1. เมื่อ command เป็น status ให้นักศึกษาที่มี studentID ทำการแสดงสถานะของ interface loopbackStudentID
 2. ยกตัวอย่างเช่น หากนักศึกษามี studentID 66070123 เมื่อได้รับข้อความ "/66070123 status" ให้ส่งข้อความไปที่ NPA2023 Webex Team room ตามเงื่อนไขต่อไปนี้
 - หากมี interface loopback 66070123 อยู่แล้ว และมีสถานะ up ให้ส่งข้อความ "Interface loopback 66070123 is enabled"
-- หากมี interface loopback 66070123 อยู่แล้ว และมีสถานะ down หรือ administratively shutdown" ให้ส่งข้อความ "Interface loopback 66070123 is disabled"
+- หากมี interface loopback 66070123 อยู่แล้ว และมีสถานะ (admin-status และ oper-status) down ให้ส่งข้อความ "Interface loopback 66070123 is disabled"
 - หากไม่มี interface loopback 66070123 ให้ส่งข้อความ "No Interface loopback 66070123"
