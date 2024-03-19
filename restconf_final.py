@@ -12,7 +12,6 @@ basicauth = ("admin", "cisco")
 
 
 def create():
-
     yangConfig = <!!!REPLACEME with YANG data!!!> 
 
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
@@ -29,6 +28,7 @@ def create():
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
 
+
 def delete():
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
         <!!!REPLACEME with URL!!!>, 
@@ -42,6 +42,7 @@ def delete():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
+
 
 def enable():
     yangConfig = <!!!REPLACEME with YANG data!!!>
@@ -59,6 +60,7 @@ def enable():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
+
 
 def disable():
     yangConfig = <!!!REPLACEME with YANG data!!!>
