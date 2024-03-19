@@ -2,8 +2,6 @@ import json
 import requests
 requests.packages.urllib3.disable_warnings()
 
-studentID = "<!!!REPLACEME with your student ID!!!>"
-
 # Router IP Address is 10.0.15.189
 api_url = "<!!!REPLACEME with URL of RESTCONF Configuration API!!!>"
 
