@@ -2,6 +2,8 @@ import json
 import requests
 requests.packages.urllib3.disable_warnings()
 
+studentID = "<!!!REPLACEME with your student ID!!!>"
+
 # Router IP Address is 10.0.15.189
 api_url = "<!!!REPLACEME with URL of RESTCONF Configuration API!!!>"
 
@@ -28,7 +30,7 @@ def create():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return "Error: Interface loopback 66070123 cannot be created "
+        return f"Error: Interface loopback {studentID} cannot be created"
 
 def delete():
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
@@ -43,7 +45,7 @@ def delete():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return "Error: Interface loopback 66070123 cannot be deleted"
+        return f"Error: Interface loopback {studentID} cannot be deleted"
 
 def enable():
     yangConfig = <!!!REPLACEME with YANG data!!!>
@@ -61,7 +63,7 @@ def enable():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return "Error: Interface loopback 66070123 cannot be enabled"
+        return f"Error: Interface loopback {studentID} cannot be enabled"
 
 def disable():
     yangConfig = <!!!REPLACEME with YANG data!!!>
@@ -79,7 +81,7 @@ def disable():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return "Error: Interface loopback 66070123 cannot be shutdowned"
+        return f"Error: Interface loopback {studentID} cannot be shutdowned"
 
 
 def status():
@@ -106,4 +108,4 @@ def status():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return "Error: cannot view the status of interface loopback 66070123"
+        return f"Error: cannot view the status of interface loopback {studentID}"
