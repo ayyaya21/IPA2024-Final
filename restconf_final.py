@@ -30,7 +30,6 @@ def create():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return f"Error: Interface loopback {studentID} cannot be created"
 
 def delete():
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
@@ -45,7 +44,6 @@ def delete():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return f"Error: Interface loopback {studentID} cannot be deleted"
 
 def enable():
     yangConfig = <!!!REPLACEME with YANG data!!!>
@@ -63,7 +61,6 @@ def enable():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return f"Error: Interface loopback {studentID} cannot be enabled"
 
 def disable():
     yangConfig = <!!!REPLACEME with YANG data!!!>
@@ -81,7 +78,6 @@ def disable():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return f"Error: Interface loopback {studentID} cannot be shutdowned"
 
 
 def status():
@@ -108,4 +104,3 @@ def status():
         return "<!!!REPLACEME with proper message!!!>"
     else:
         print('Error. Status Code: {}'.format(resp.status_code))
-        return f"Error: cannot view the status of interface loopback {studentID}"
