@@ -81,7 +81,7 @@ def disable():
 
 
 def status():
-    api_url_status = "<!!!REPLACEME with URL of RESTCONF Operation API!!!>"
+    api_url_status = "<!!!REPLACEME with URL of RESTCONF Operational API!!!>"
 
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
         <!!!REPLACEME with URL!!!>, 
