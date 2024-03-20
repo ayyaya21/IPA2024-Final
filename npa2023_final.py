@@ -4,7 +4,7 @@
 # Your GitHub Repo: 
 
 #######################################################################################
-# 1. Import libraries for API requests, JSON formatting, time, and restconf-final.
+# 1. Import libraries for API requests, JSON formatting, time, and (restconf_final or netconf_final).
 
 <!!!REPLACEME with code for libraries>
 
