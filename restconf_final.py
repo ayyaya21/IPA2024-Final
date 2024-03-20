@@ -16,7 +16,7 @@ def create():
 
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
         <!!!REPLACEME with URL!!!>, 
-        data=json.dumps(<!!!REPLACEME with YangData!!!>), 
+        data=json.dumps(<!!!REPLACEME with yangConfig!!!>), 
         auth=basicauth, 
         headers=<!!!REPLACEME with HTTP Header!!!>, 
         verify=False
@@ -49,7 +49,7 @@ def enable():
 
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
         <!!!REPLACEME with URL!!!>, 
-        data=json.dumps(<!!!REPLACEME with YangData!!!>), 
+        data=json.dumps(<!!!REPLACEME with yangConfig!!!>), 
         auth=basicauth, 
         headers=<!!!REPLACEME with HTTP Header!!!>, 
         verify=False
@@ -67,7 +67,7 @@ def disable():
 
     resp = requests.<!!!REPLACEME with the proper HTTP Method!!!>(
         <!!!REPLACEME with URL!!!>, 
-        data=json.dumps(<!!!REPLACEME with YangData!!!>), 
+        data=json.dumps(<!!!REPLACEME with yangConfig!!!>), 
         auth=basicauth, 
         headers=<!!!REPLACEME with HTTP Header!!!>, 
         verify=False
