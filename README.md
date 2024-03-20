@@ -18,7 +18,9 @@
 4. disable
 5. status
 
-ให้นักศึกษาดำเนินการตาม command ที่ Router IP 10.0.15.189 โดยใช้ Netconf หรือ Restconf (Router นี้มีการ enable Netconf และ Restconf พร้อมใช้งานแล้ว)
+ให้นักศึกษาดำเนินการตาม command ที่ Router IP 10.0.15.189 โดยใช้ Netconf หรือ Restconf (ให้เลือกใช้อย่างใดอย่างหนึ่ง หากต้องการใช้ NETCONF ก็ให้ไปเขียนโปรแกรมเพิ่มที่ netconf_final.py หากต้องการใช้ RESTCONF ก็ให้ edit ที่ restconf_final.py)
+
+Router นี้มีการ enable Netconf และ Restconf พร้อมใช้งานแล้ว
 
 ### command = create
 
@@ -59,12 +61,12 @@
 นักศึกษาสามารถศึกษาตัวอย่าง RESTCONF API ได้โดยการ import collection URL นี้ ลงในโปรแกรม Postman
 <https://api.postman.com/collections/4426393-69dd44cf-c218-46a4-a787-a98c88ca999a?access_key=PMAT-01HPR144H4Z5X2AXGWQBG9YC41>
 
-และศึกษาตัวอย่างเพิ่มเติมได้ที่
-<https://github.com/chotipat/NPA2023/tree/main/restconf>
+และศึกษาตัวอย่างเพิ่มเติมของ NETCONF และ RESTCONF ได้ที่
+<https://github.com/chotipat/NPA2023f>
 
 Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model ได้ที่ <https://github.com/YangModels/yang/tree/main/vendor/cisco/xe/1693>
 
-หลักๆ สามารถใช้ ietf-interfaces.yang ได้ <https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang>
+หลักๆ สามารถใช้ ietf-interfaces.yang ในการทำโจทย์ข้อนี้ <https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang>
 
 ใช้ <https://codebeautify.org/xmlviewer> เพื่อดู xml
 ใช้ <https://codebeautify.org/jsonviewer> เพื่อดู json
