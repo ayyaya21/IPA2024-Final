@@ -3,7 +3,7 @@
 ## Instruction
 
 1. Fork repository นี้ไปยัง GitHub repository ของตนเอง
-2. ทำการ Fork/Clone repository จาก GitHub repository ของตนเอง ไปยัง GitHub/local repository ในเครื่องของตนเอง
+2. ทำการ Clone repository จาก GitHub repository ของตนเอง ไปยัง GitHub/local repository ในเครื่องของตนเอง
 3. ดำเนินการเขียนโปรแกรมตามดังรูปแบบที่เคยทำใน <https://github.com/chotipat/NPA2023-Final-Example> โดยมีการเปลี่ยนแปลงโจทย์ดังที่กำหนดด้านล่างนี้
 4. ให้ commit และเขียน commit message ที่ดี อยู่เป็นระยะ
 5. เมื่อทำเสร็จแล้ว ให้ส่งข้อมูลชื่อ นามสกุล GitHub URL และตอบคำถามลงใน Google Form ที่ <https://forms.gle/4oRJYJuUgnVTNFgh7> ภายในเวลา 15:30 น.
