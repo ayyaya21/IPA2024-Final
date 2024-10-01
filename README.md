@@ -99,5 +99,7 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 
 ให้นักศึกษาใช้เขียนโปรแกรมใน ansible_final.py เพื่อเรียก Ansible playbook ในการตั้งค่า IPv6 ของ Loopback Interface ของนักศึกษา จากนั้นให้อ่านข้อความ IPv6_output_CSR1kv.txt จากเครื่องของนักศึกษา และส่งข้อความนั้นมาที่ IPA2024 Webex Team room
 
+ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น host file, playbook.yaml file, IPv6_output_CSR1kv.txt file ด้วย
+
 
 
