@@ -1,4 +1,4 @@
-# NPA2024-Final
+# IPA2024-Final
 
 ## Instruction
 
