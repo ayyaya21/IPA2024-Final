@@ -4,14 +4,14 @@
 # Your GitHub Repo: 
 
 #######################################################################################
-# 1. Import libraries for API requests, JSON formatting, time, and (restconf_final or netconf_final).
+# 1. Import libraries for API requests, JSON formatting, time, os, (restconf_final or netconf_final), netmiko_final, and ansible_final.
 
 <!!!REPLACEME with code for libraries>
 
 #######################################################################################
-# 2. Assign the Webex hard-coded access token to the variable accessToken.
+# 2. Assign the Webex access token to the variable ACCESS_TOKEN using environment variables.
 
-accessToken = "Bearer <!!!REPLACEME with hard-coded token!!!>"
+ACCESS_TOKEN = "<!!!REPLACEME with token using environment variable!!!>"
 
 #######################################################################################
 # 3. Prepare parameters get the latest message for messages API.
