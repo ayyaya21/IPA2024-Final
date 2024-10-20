@@ -88,20 +88,16 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 
 ให้นักศึกษาดำเนินการตาม command gigabit_up_down ที่ Router โดยใช้ Netmiko/TextFSM ไปเขียนโปรแกรมเพิ่มที่ netmiko_final.py เพื่อดูว่ามี Interface GigtabitEthernet ใดบ้างที่ Up อยู่ เช่น หาก Interface GigabitEthernet1-3 up แต่ GigabitEthernet4 down อยู่ ให้แสดงข้อความด้านล่างกลับไปที่ IPA2024 Webex Team room
 
-GigabitEthernet 1 up, GigabitEthernet 2 up, GigabitEthernet 3 up, GigabitEthernet 4 down -> 3 up 1 down
+GigabitEthernet 1 up, GigabitEthernet 2 up, GigabitEthernet 3 down, GigabitEthernet 4 admin down -> 2 up 1 down 1 admin down
 
-- ห้าม Shutdown GigatbitEthernet1 เนื่องจากว่าเป็น Interface ที่ต่อกับ Cloud และมี IP 10.0.15.199 หาก Shutdown interface นี้จะทำให้ไม่สามารถติดต่อกับ Router ได้
+- ห้าม Shutdown GigatbitEthernet1 เนื่องจากว่าเป็น Interface ที่ต่อกับ Cloud และมี IP 10.0.15.181-184 หาก Shutdown interface นี้จะทำให้ไม่สามารถติดต่อกับ Router ได้
 - สามารถ console เข้ามา shutdown/no shutdown GigabitEthernet2-4 ได้ แต่ต้องระวังว่าทุกคน share Router เดียวกันอยู่
 
-### command = ipv6
+### command = backup
 
 ให้นักศึกษาแก้ไข ansible playbook ที่เคยทำ Lab ใน Part 4 Use Ansible to Configure a Device ของ Lab - Use Ansible to Back Up and Configure a Device
-https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=drive_link&ouid=109883484669217093529&rtpof=true&sd=true เพื่อตั้งค่า IPv6 address ของ Loopback Interface ของนักศึกษาที่ทำมาในโจทย์ข้อ 1 
+https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=drive_link&ouid=109883484669217093529&rtpof=true&sd=true โดยให้ Save running config ในไฟล์ชื่อ show_run_<studentID>_CSR1kv.txt เช่น show_run_66070123_CSR1kv.txt
 
-และให้นักศึกษาเขียนโปรแกรมใน ansible_final.py เพื่อเรียก Ansible playbook ให้ทำงาน จากนั้นให้อ่านข้อความ IPv6_output_CSR1kv.txt จากเครื่องของนักศึกษา และส่งข้อความนั้นมาที่ IPA2024 Webex Team room
-ทดลองเปลี่ยน IPv6 เพื่อทดสอบว่าโปรแกรมสามารถทำงานได้ปกติหรือไม่
+จากนั้นให้นักศึกษาเขียนโปรแกรมใน ansible_final.py เพื่อเรียก Ansible playbook ให้ทำงาน โดยให้แนบไฟล์ show_run_<studentID>_CSR1kv.txt และส่งไฟล์ นั้นมาที่ IPA2024 Webex Team room
 
-ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น host file, playbook.yaml file, IPv6_output_CSR1kv.txt file ด้วย
-
-
-
+ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_<studentID>_CSR1kv.txt ด้วย
