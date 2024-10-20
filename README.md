@@ -88,10 +88,10 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 
 ให้นักศึกษาดำเนินการตาม command gigabit_up_down ที่ Router โดยใช้ Netmiko/TextFSM ไปเขียนโปรแกรมเพิ่มที่ netmiko_final.py เพื่อดูว่ามี Interface GigtabitEthernet ใดบ้างที่ Up อยู่ เช่น หาก Interface GigabitEthernet1-3 up แต่ GigabitEthernet4 down อยู่ ให้แสดงข้อความด้านล่างกลับไปที่ IPA2024 Webex Team room
 
-GigabitEthernet 1 up, GigabitEthernet 2 up, GigabitEthernet 3 down, GigabitEthernet 4 admin down -> 2 up, 1 down, 1 admin down
+GigabitEthernet1 up, GigabitEthernet2 up, GigabitEthernet3 down, GigabitEthernet4 administratively down -> 2 up, 1 down, 1 administratively down
 
 - ห้าม Shutdown GigatbitEthernet1 เนื่องจากว่าเป็น Interface ที่ต่อกับ Cloud และมี IP 10.0.15.181-184 หาก Shutdown interface นี้จะทำให้ไม่สามารถติดต่อกับ Router ได้
-- สามารถ console เข้ามา shutdown/no shutdown GigabitEthernet2-4 ได้ แต่ต้องระวังว่าทุกคน share Router เดียวกันอยู่
+- สามารถ console เข้ามา shutdown/no shutdown GigabitEthernet2-4 ได้ แต่ต้องระวังว่ามีเพื่อน share Router เดียวกันอยู่
 
 ### command = backup
 
