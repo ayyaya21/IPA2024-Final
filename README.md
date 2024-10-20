@@ -88,6 +88,9 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 
 GigabitEthernet 1 up, GigabitEthernet 2 up, GigabitEthernet 3 up, GigabitEthernet 4 down -> 3 up 1 down
 
+- ห้าม Shutdown GigatbitEthernet1 เนื่องจากว่าเป็น Interface ที่ต่อกับ Cloud และมี IP 10.0.15.199 หาก Shutdown interface นี้จะทำให้ไม่สามารถติดต่อกับ Router ได้
+- สามารถ console เข้ามา shutdown/no shutdown GigabitEthernet2-4 ได้ แต่ต้องระวังว่าทุกคน share Router เดียวกันอยู่
+
 ### command = ipv6
 
 ให้นักศึกษาแก้ไข ansible playbook ที่เคยทำ Lab ใน Part 4 Use Ansible to Configure a Device ของ Lab - Use Ansible to Back Up and Configure a Device
