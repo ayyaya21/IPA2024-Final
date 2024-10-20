@@ -2,7 +2,7 @@ import json
 import requests
 requests.packages.urllib3.disable_warnings()
 
-# Router IP Address is 10.0.15.189
+# Router IP Address is 10.0.15.181-184
 api_url = "<!!!REPLACEME with URL of RESTCONF Configuration API!!!>"
 
 # the RESTCONF HTTP headers, including the Accept and Content-Type
