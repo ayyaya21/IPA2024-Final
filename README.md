@@ -93,6 +93,9 @@ GigabitEthernet1 up, GigabitEthernet2 up, GigabitEthernet3 down, GigabitEthernet
 - ห้าม Shutdown GigatbitEthernet1 เนื่องจากว่าเป็น Interface ที่ต่อกับ Cloud และมี IP 10.0.15.181-184 หาก Shutdown interface นี้จะทำให้ไม่สามารถติดต่อกับ Router ได้
 - สามารถ console เข้ามา shutdown/no shutdown GigabitEthernet2-4 ได้ แต่ต้องระวังว่ามีเพื่อน share Router เดียวกันอยู่
 
+เข่น หากลอง shutdown GigabitEthernet2 และส่ง command gigabit_status จะได้ผลเป็น
+GigabitEthernet1 up, GigabitEthernet2 administratively down, GigabitEthernet3 down, GigabitEthernet4 administratively down -> 1 up, 1 down, 2 administratively down
+
 ### command = backup
 
 ให้นักศึกษาแก้ไข ansible playbook ที่เคยทำ Lab ใน Part 4 Use Ansible to Configure a Device ของ Lab - Use Ansible to Back Up and Configure a Device
