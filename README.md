@@ -24,7 +24,9 @@
 
 ไฟล์โปรแกรมหลักจะอยู่ที่ npa2024_final.py หากต้องการใช้ Netconf ก็ให้ import netconf_final ลงไปใน npa2024_final.py แต่หากต้องการใช้ Restconf ให้ import restconf_final ลงไปใน npa2024_final.py
 
-Router IP 10.0.15.199 ได้ enable Netconf และ Restconf พร้อมใช้งานแล้ว สามารถเข้าถึงได้ด้วย username admin password cisco จากเครือข่ายภายในคณะฯ
+นักศึกษาใช้ GNS3 IP, Project และ Router IP ตามที่ระบุใน https://docs.google.com/spreadsheets/d/1emUMBJx_bPvJ5mEPHCVumdzZaWp-YFAiWXdhco5y430/edit?usp=sharing ใช้ @kmitl.ac.th login
+
+Router IP 10.0.15.181-184 ได้ enable Netconf และ Restconf พร้อมใช้งานแล้ว สามารถเข้าถึงได้ด้วย username admin password cisco จากเครือข่ายภายในคณะฯ
 
 ### command = create
 
@@ -84,7 +86,7 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 
 ### command = gigabit_up_down
 
-ให้นักศึกษาดำเนินการตาม command gigabit_up_down ที่ Router IP 10.0.15.199 โดยใช้ Netmiko/TextFSM ไปเขียนโปรแกรมเพิ่มที่ netmiko_final.py เพื่อดูว่ามี Interface GigtabitEthernet ใดบ้างที่ Up อยู่ เช่น หาก Interface GigabitEthernet1-3 up แต่ GigabitEthernet4 down อยู่ ให้แสดงข้อความด้านล่างกลับไปที่ IPA2024 Webex Team room
+ให้นักศึกษาดำเนินการตาม command gigabit_up_down ที่ Router โดยใช้ Netmiko/TextFSM ไปเขียนโปรแกรมเพิ่มที่ netmiko_final.py เพื่อดูว่ามี Interface GigtabitEthernet ใดบ้างที่ Up อยู่ เช่น หาก Interface GigabitEthernet1-3 up แต่ GigabitEthernet4 down อยู่ ให้แสดงข้อความด้านล่างกลับไปที่ IPA2024 Webex Team room
 
 GigabitEthernet 1 up, GigabitEthernet 2 up, GigabitEthernet 3 up, GigabitEthernet 4 down -> 3 up 1 down
 
