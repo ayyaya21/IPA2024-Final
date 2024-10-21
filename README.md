@@ -104,4 +104,4 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 จากนั้นให้นักศึกษาเขียนโปรแกรมใน ansible_final.py เพื่อเรียก Ansible playbook ให้ทำงาน หาก ansible playbook ทำงานสำเร็จ ให้แนบไฟล์ show_run_[studentID]_[router_name].txt และส่งไฟล์ นั้นมาที่ IPA2024 Webex Team room 
 หาก tasks ใน playbook ไม่สำเร็จ ให้ส่งข้อความ 'Error: Ansible' กลับมายัง Webex Team room
 
-ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_CSR1kv.txt และ ansible_final.py ด้วย
+ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_[router_name].txt และ ansible_final.py ด้วย
