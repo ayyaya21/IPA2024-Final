@@ -77,6 +77,9 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 ใช้ <https://codebeautify.org/xmlviewer> เพื่อดู xml
 ใช้ <https://codebeautify.org/jsonviewer> เพื่อดู json
 
+<img width="923" alt="sample-loopback-interface-api" src="https://github.com/user-attachments/assets/2e81328f-84c3-471d-ae4d-f48004364048">
+
+
 # โจทย์ ข้อ 2 (10 คะแนน) ให้รับ command เพิ่มอีก 2 command โดยใช้ Netmiko และ Ansible 
 
 เมื่อได้รับข้อความ "/studentID command" ให้นักศึกษาที่มี studentID ตรงกับค่าในข้อความทำการตาม command ที่ระบุในข้อความ โดย command มีได้เพิ่มอีก 2 แบบ ได้แก่
@@ -96,6 +99,8 @@ GigabitEthernet1 up, GigabitEthernet2 up, GigabitEthernet3 down, GigabitEthernet
 เข่น หากลอง shutdown GigabitEthernet2 และส่ง command gigabit_status จะได้ผลเป็น
 GigabitEthernet1 up, GigabitEthernet2 administratively down, GigabitEthernet3 down, GigabitEthernet4 administratively down -> 1 up, 1 down, 2 administratively down
 
+<img width="1010" alt="sample-gigabit-status-api" src="https://github.com/user-attachments/assets/132858ca-6fcc-4ae9-8894-d8181a9fa53b">
+
 ### command = showrun
 
 ให้นักศึกษาแก้ไข ansible playbook ที่เคยทำ Lab ใน Part 4 Use Ansible to Configure a Device ของ Lab - Use Ansible to Back Up and Configure a Device
@@ -105,3 +110,5 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 หาก tasks ใน playbook ไม่สำเร็จ ให้ส่งข้อความ 'Error: Ansible' กลับมายัง Webex Team room
 
 ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_[router_name].txt และ ansible_final.py ด้วย
+
+<img width="1010" alt="sample-showrun-api" src="https://github.com/user-attachments/assets/f2977407-35af-4b4d-b995-2e5824b2deb3">
