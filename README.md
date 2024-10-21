@@ -117,4 +117,4 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 
 #### ตัวอย่างการใช้ API
 
-<img width="1010" alt="sample-showrun-api" src="https://github.com/user-attachments/assets/f2977407-35af-4b4d-b995-2e5824b2deb3">
+<img width="957" alt="sample-showrun-api" src="https://github.com/user-attachments/assets/7045e63b-18e4-4d92-820d-93b62ede3c81">
