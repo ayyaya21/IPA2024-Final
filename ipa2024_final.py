@@ -118,7 +118,6 @@ while True:
             "Authorization": ACCESS_TOKEN,
             "Content-Type": <!!!REPLACEME with postData Content-Type!!!>,
             }
-            print(postData.content_type)
         # other commands only send text, or no attached file.
         else:
             postData = {"roomId": <!!!REPLACEME!!!>, "text": <!!!REPLACEME!!!>}
