@@ -79,7 +79,7 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 
 #### ตัวอย่างการใช้ API
 
-<img width="923" alt="sample-loopback-interface-api" src="https://github.com/user-attachments/assets/2e81328f-84c3-471d-ae4d-f48004364048">
+<img width="632" alt="sample-loopback-interface-api" src="https://github.com/user-attachments/assets/55c7f8c8-53f1-46db-a284-a3985bf94ce7">
 
 
 # โจทย์ส่วนที่ 2 (10 คะแนน) ให้รับ command เพิ่มอีก 2 command โดยใช้ Netmiko และ Ansible 
