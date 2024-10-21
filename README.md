@@ -77,6 +77,8 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 ใช้ <https://codebeautify.org/xmlviewer> เพื่อดู xml
 ใช้ <https://codebeautify.org/jsonviewer> เพื่อดู json
 
+#### ตัวอย่างการใช้ API
+
 <img width="923" alt="sample-loopback-interface-api" src="https://github.com/user-attachments/assets/2e81328f-84c3-471d-ae4d-f48004364048">
 
 
@@ -99,6 +101,8 @@ GigabitEthernet1 up, GigabitEthernet2 up, GigabitEthernet3 down, GigabitEthernet
 เข่น หากลอง shutdown GigabitEthernet2 และส่ง command gigabit_status จะได้ผลเป็น
 GigabitEthernet1 up, GigabitEthernet2 administratively down, GigabitEthernet3 down, GigabitEthernet4 administratively down -> 1 up, 1 down, 2 administratively down
 
+#### ตัวอย่างการใช้ API
+
 <img width="1010" alt="sample-gigabit-status-api" src="https://github.com/user-attachments/assets/132858ca-6fcc-4ae9-8894-d8181a9fa53b">
 
 ### command = showrun
@@ -110,5 +114,7 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 หาก tasks ใน playbook ไม่สำเร็จ ให้ส่งข้อความ 'Error: Ansible' กลับมายัง Webex Team room
 
 ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_[router_name].txt และ ansible_final.py ด้วย
+
+#### ตัวอย่างการใช้ API
 
 <img width="1010" alt="sample-showrun-api" src="https://github.com/user-attachments/assets/f2977407-35af-4b4d-b995-2e5824b2deb3">
