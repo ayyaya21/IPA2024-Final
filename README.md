@@ -30,6 +30,8 @@
 
 Router IP 10.0.15.181-184 ได้ enable Netconf และ Restconf พร้อมใช้งานแล้ว สามารถเข้าถึงได้ด้วย username admin password cisco จากเครือข่ายภายในคณะฯ
 
+***อาจจะต้องเขียน Code ในส่วนอื่นๆเอง ที่ไม่ได้ระบุไว้ใน <!!! !!!>***
+
 ### command = create
 
 1. เมื่อ command เป็น create ให้นักศึกษาที่มี studentID ทำการสร้าง interface loopbackStudentID
