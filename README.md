@@ -110,10 +110,10 @@ GigabitEthernet1 up, GigabitEthernet2 administratively down, GigabitEthernet3 do
 ### command = showrun
 
 ให้นักศึกษาแก้ไข ansible playbook ที่เคยทำ Lab ใน Part 4 Use Ansible to Configure a Device ของ Lab - Use Ansible to Back Up and Configure a Device
-https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=drive_link&ouid=109883484669217093529&rtpof=true&sd=true โดยให้ Save running config ในไฟล์ชื่อ show_run_[studentID]_[router_name].txt เช่น show_run_66070123_CSR1KV-Pod1-1.txt
+https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=drive_link&ouid=109883484669217093529&rtpof=true&sd=true โดยให้ run playbook เพื่อ save running config ลงไปในไฟล์ชื่อ show_run_[studentID]_[router_name].txt เช่น show_run_66070123_CSR1KV-Pod1-1.txt
 
 จากนั้นให้นักศึกษาเขียนโปรแกรมใน ansible_final.py เพื่อเรียก Ansible playbook ให้ทำงาน หาก ansible playbook ทำงานสำเร็จ ให้แนบไฟล์ show_run_[studentID]_[router_name].txt และส่งไฟล์ นั้นมาที่ IPA2024 Webex Team room 
-หาก tasks ใน playbook ไม่สำเร็จ ให้ส่งข้อความ 'Error: Ansible' กลับมายัง Webex Team room
+หากมี tasks ใน playbook run ไม่สำเร็จ ให้ส่งข้อความ 'Error: Ansible' กลับมายัง Webex Team room โดยไม่ต้องแนบไฟล์
 
 ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_[router_name].txt และ ansible_final.py ด้วย
 
