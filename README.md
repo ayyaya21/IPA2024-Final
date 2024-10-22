@@ -115,6 +115,11 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 
 ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_[router_name].txt และ ansible_final.py ด้วย
 
+
+**Hint** 
+1. อ่านวิธีและตัวอย่างการใช้งาน subprocess เพื่อ run ansible-playbook ใน Python -> https://www.datacamp.com/tutorial/python-subprocess
+2. อ่านวิธีการส่งไฟล์แนบใน Webex Team room ในหัวข้อ Send a Message with Attachments Local File Attachments -> https://developer.webex.com/docs/basics
+
 #### ตัวอย่างการใช้ API
 
 <img width="957" alt="sample-showrun-api" src="https://github.com/user-attachments/assets/7045e63b-18e4-4d92-820d-93b62ede3c81">
