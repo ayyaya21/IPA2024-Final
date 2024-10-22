@@ -93,7 +93,7 @@ Router ใช้ IOS XE 16.9.5 ดังนั้นศึกษา Yang model �
 
 ### command = gigabit_status
 
-ให้นักศึกษาดำเนินการตาม command gigabit_up_down ที่ Router โดยใช้ Netmiko/TextFSM ไปเขียนโปรแกรมเพิ่มที่ netmiko_final.py เพื่อดูว่ามี Interface GigtabitEthernet ใดบ้างที่ Up อยู่ เช่น หาก Interface GigabitEthernet1-3 up แต่ GigabitEthernet4 down อยู่ ให้แสดงข้อความด้านล่างกลับไปที่ IPA2024 Webex Team room
+ให้นักศึกษาดำเนินการตาม command gigabit_status ที่ Router โดยใช้ Netmiko/TextFSM ไปเขียนโปรแกรมเพิ่มที่ netmiko_final.py เพื่อดูว่ามี Interface GigtabitEthernet ใดบ้างที่ Up และ Down อยู่ เช่น หาก Interface GigabitEthernet1-3 up แต่ GigabitEthernet4 down อยู่ ให้แสดงข้อความด้านล่างกลับไปที่ IPA2024 Webex Team room
 
 GigabitEthernet1 up, GigabitEthernet2 up, GigabitEthernet3 down, GigabitEthernet4 administratively down -> 2 up, 1 down, 1 administratively down
 
@@ -116,7 +116,6 @@ https://docs.google.com/document/d/1Mdrh0y8u0Dcf9-AC9cnCATlVcuC5ZyIm/edit?usp=dr
 หาก tasks ใน playbook ไม่สำเร็จ ให้ส่งข้อความ 'Error: Ansible' กลับมายัง Webex Team room
 
 ให้ commit ไฟล์ที่เกี่ยวข้องกับ ansible ทั้งหมด เช่น hosts, ansible.cfg, playbook.yaml, show_run_[studentID]_[router_name].txt และ ansible_final.py ด้วย
-
 
 **Hint** 
 1. อ่านวิธีและตัวอย่างการใช้งาน subprocess เพื่อ run ansible-playbook ใน Python -> https://www.datacamp.com/tutorial/python-subprocess
