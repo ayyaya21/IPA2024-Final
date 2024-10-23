@@ -4,7 +4,7 @@
 
 1. Fork repository นี้ไปยัง GitHub repository ของตนเอง
 2. ทำการ Clone repository จาก GitHub repository ของตนเอง ไปยัง GitHub/local repository ในเครื่องของตนเอง
-3. ดำเนินการเขียนโปรแกรมตามดังรูปแบบที่เคยทำใน <https://github.com/chotipat/NPA2023-Final> 
+3. ดำเนินการเขียนโปรแกรมตามดังรูปแบบที่เคยทำใน <https://github.com/chotipat/NPA2023-Final>
 4. ให้ commit และเขียน commit message ที่ดี อยู่เป็นระยะ
 5. เมื่อทำเสร็จแล้ว ให้ส่งข้อมูลชื่อ นามสกุล GitHub URL และตอบคำถามลงใน Google Form ที่ <https://forms.gle/CzAhCVKxgd1rL5LQ7> ภายในเวลา 15:30 น.
 
@@ -12,6 +12,7 @@
 
 ## โจทย์ส่วน 1 (10 คะแนน) คล้ายกับ โจทย์ข้อสอบ NPA2023 Final 
 - **มีเปลี่ยนแปลงเล็กน้อย ห้ามใช้ Hardcode token ลงในโปรแกรม ให้ใช้ Environment variable เก็บ Token**
+- **สร้าง Python Virtual Environment และ install libraries ที่ต้องใช้ลงใน Virtual environment และสร้าง requirements.txt เพื่อเก็บ List ของ Libraries ที่ต้องใช้ทั้งหมด และ commit และ push มาใน GitHub ด้วย ไม่ต้อง push virtual environment และ libraries ให้ push แต่ requirements.txt**
 - **ให้นักศึกษาทำโจทย์ส่วนที่ 1 ให้เสร็จก่อน จึงทำโจทย์ส่วนที่ 2**
 
 เมื่อได้รับข้อความ "/studentID command" ให้นักศึกษาที่มี studentID ตรงกับค่าในข้อความทำการตาม command ที่ระบุในข้อความ โดย command มีได้ 5 แบบ ได้แก่
