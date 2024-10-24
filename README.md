@@ -6,7 +6,7 @@
 2. ทำการ Clone repository จาก GitHub repository ของตนเอง ไปยัง GitHub/local repository ในเครื่องของตนเอง
 3. ดำเนินการเขียนโปรแกรมตามดังรูปแบบที่เคยทำใน <https://github.com/chotipat/NPA2023-Final>
 4. ให้ commit และเขียน commit message ที่ดี อยู่เป็นระยะ
-5. เมื่อทำเสร็จแล้ว ให้ส่งข้อมูลชื่อ นามสกุล GitHub URL และตอบคำถามลงใน Google Form ที่ <https://forms.gle/CzAhCVKxgd1rL5LQ7> ภายในเวลา 15:30 น.
+5. เมื่อทำเสร็จแล้ว ให้ส่งข้อมูลชื่อ นามสกุล GitHub URL และตอบคำถามลงใน Google Form ที่ <https://forms.gle/CzAhCVKxgd1rL5LQ7> ภายในเวลา 15:30 น. **ควรเหลือเวลาประมาณ 10-15 นาทีในการตอบคำถามในแบบฟอร์ม**
 
 มีโจทย์ 2 ส่วน
 
