@@ -23,7 +23,7 @@
 4. disable
 5. status
 
-สำหรับโจทย์ข้อ 1 ให้นักศึกษาดำเนินการตาม command ที่ Router IP 10.0.15.199 โดยใช้ Netconf หรือ Restconf (ให้เลือกใช้อย่างใดอย่างหนึ่ง หากต้องการใช้ NETCONF ก็ให้ไปเขียนโปรแกรมเพิ่มที่ netconf_final.py หากต้องการใช้ RESTCONF ก็ให้ edit ที่ restconf_final.py)
+สำหรับโจทย์ข้อ 1 ให้นักศึกษาดำเนินการตาม command ที่ Router IP 10.0.15.181-184 โดยใช้ Netconf หรือ Restconf (ให้เลือกใช้อย่างใดอย่างหนึ่ง หากต้องการใช้ NETCONF ก็ให้ไปเขียนโปรแกรมเพิ่มที่ netconf_final.py หากต้องการใช้ RESTCONF ก็ให้ edit ที่ restconf_final.py)
 
 ไฟล์โปรแกรมหลักจะอยู่ที่ ipa2024_final.py หากต้องการใช้ Netconf ก็ให้ import netconf_final ลงไปใน ipa2024_final.py แต่หากต้องการใช้ Restconf ให้ import restconf_final ลงไปใน ipa2024_final.py
 
