@@ -14,7 +14,7 @@ basicauth = ("admin", "cisco")
 def create():
     yangConfig = {
     "ietf-interfaces:interface": {
-        "name": "Loopback221",
+        "name": "Loopback66070221",
         "type": "iana-if-type:softwareLoopback",
         "ietf-ip:ipv4": {
             "address": [
@@ -29,7 +29,7 @@ def create():
 }
 
     resp = requests.put(
-        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback221", 
+        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback66070221", 
         data=json.dumps(yangConfig), 
         auth=basicauth, 
         headers=headers, 
@@ -46,7 +46,7 @@ def create():
 
 def delete():
     resp = requests.delete(
-        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback221", 
+        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback66070221", 
         auth=basicauth, 
         headers=headers, 
         verify=False
@@ -68,7 +68,7 @@ def enable():
     }
 
     resp = requests.put(
-        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback221", 
+        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback66070221", 
         data=json.dumps(yangConfig), 
         auth=basicauth, 
         headers=headers, 
@@ -91,7 +91,7 @@ def disable():
     }
 
     resp = requests.put(
-        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback221", 
+        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback66070221", 
         data=json.dumps(yangConfig), 
         auth=basicauth, 
         headers=headers, 
@@ -107,7 +107,7 @@ def disable():
 
 
 def status():
-    api_url_status = "restconf/data/ietf-interfaces:interfaces-state/interface=Loopback221"
+    api_url_status = "restconf/data/ietf-interfaces:interfaces-state/interface=Loopback66070221"
 
     resp = requests.get(
         api_url + api_url_status, 
