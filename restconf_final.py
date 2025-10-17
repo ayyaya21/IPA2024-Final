@@ -63,7 +63,7 @@ def delete():
 def enable():
     yangConfig = {
       "ietf-interfaces:interface": {
-        "enabled": true
+        "enabled": True
       }
     }
 
@@ -86,7 +86,7 @@ def enable():
 def disable():
     yangConfig = {
       "ietf-interfaces:interface": {
-        "enabled": false
+        "enabled": False
       }
     }
 
