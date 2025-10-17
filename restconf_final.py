@@ -7,7 +7,7 @@ api_url = "https://10.0.15.61/"
 
 # the RESTCONF HTTP headers, including the Accept and Content-Type
 # Two YANG data formats (JSON and XML) work with RESTCONF 
-headers = {'Content-Type': 'application/json+yang', 'Accept': 'application/yang-data+json' }
+headers = {'Content-Type': 'application/yang-data+json', 'Accept': 'application/yang-data+json' }
 basicauth = ("admin", "cisco")
 
 
