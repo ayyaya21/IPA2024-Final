@@ -28,8 +28,8 @@ def create():
     }
 }
 
-    resp = requests.put(
-        api_url + "restconf/data/ietf-interfaces:interfaces/interface=Loopback66070221", 
+    resp = requests.post(
+        api_url + "restconf/data/ietf-interfaces:interfaces", 
         data=json.dumps(yangConfig), 
         auth=basicauth, 
         headers=headers, 
