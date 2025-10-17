@@ -129,7 +129,7 @@ while True:
             postData = json.dumps(postData)
 
             # the Webex Teams HTTP headers, including the Authoriztion and Content-Type
-            HTTPHeaders = {"Authorization": ACCESS_TOKEN, "Content-Type": "application/json"}   
+            HTTPHeaders = {"Authorization": 'Bearer ' + ACCESS_TOKEN, "Content-Type": "application/json"}   
 
         # Post the call to the Webex Teams message API.
         r = requests.post(
