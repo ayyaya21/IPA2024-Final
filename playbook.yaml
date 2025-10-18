@@ -9,7 +9,7 @@
         commands:
           - show running-config
       register: config
-      
+
     - name: SAVE OUTPUT TO FILE
       ansible.builtin.copy:
         content: "{{ config.stdout[0] }}"
