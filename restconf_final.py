@@ -59,6 +59,7 @@ def delete():
 def enable():
     yangConfig = {
       "ietf-interfaces:interface": {
+        "name": "Loopback66070221",
         "type": "iana-if-type:softwareLoopback",
         "enabled": True
       }
@@ -83,6 +84,7 @@ def enable():
 def disable():
     yangConfig = {
       "ietf-interfaces:interface": {
+        "name": "Loopback66070221",
         "type": "iana-if-type:softwareLoopback",
         "enabled": False
       }
