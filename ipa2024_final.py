@@ -87,8 +87,8 @@ while True:
             responseMessage = disable()
         elif command == "status":
             responseMessage = status()
-        # elif command == "gigabit_status":
-        #     <!!!REPLACEME with code for gigabit_status command!!!>
+        elif command == "gigabit_status":
+            responseMessage = gigabit_status()
         # elif command == "showrun":
         #     <!!!REPLACEME with code for showrun command!!!>
         else:
