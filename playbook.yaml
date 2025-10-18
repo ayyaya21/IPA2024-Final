@@ -1,8 +1,16 @@
-- hosts: all
-  gather_facts: no
+---
+- name: AUTOMATIC BACKUP FOR FINAL EXAM
+  hosts: R1-Exam
+  gather_facts: false
+  connection: local
   tasks:
-    - name: Save running config
-      cisco.ios.ios_config:
-        backup: yes
-        backup_options:
-          filename: "show_run_66070221_R1-Exam.txt"
+    - name: DISPLAYING THE RUNNING-CONFIG
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register: config
+      
+    - name: SAVE OUTPUT TO FILE
+      ansible.builtin.copy:
+        content: "{{ config.stdout[0] }}"
+        dest: "show_run_66070221_R1-Exam.txt"
