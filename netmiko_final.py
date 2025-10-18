@@ -20,6 +20,9 @@ device_params = {
     "host": device_ip,
     "username": username,
     "password": password,
+    'port': 22,
+    'conn_timeout': 20,
+    'timeout': 30,
 }
 
 
