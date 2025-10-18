@@ -35,8 +35,8 @@ def gigabit_status():
         result = ssh.send_command("show ip interface brief", use_textfsm=True)
         interface_status_list = []
         for status in result:
-            if status["intf"].startswith("GigabitEthernet"):
-                interface_status_list.append(f"{status['intf']} {status['status']}")
+            if status["interface"].startswith("GigabitEthernet"):
+                interface_status_list.append(f"{status['interface']} {status['status']}")
                 if status["status"] == "up":
                     up += 1
                 elif status["status"] == "down":
