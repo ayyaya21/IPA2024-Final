@@ -3,11 +3,12 @@ from pprint import pprint
 import paramiko
 
 paramiko.transport.Transport._preferred_kex = (
-    'diffie-hellman-group14-sha1'
+    'diffie-hellman-group14-sha1',
+    'diffie-hellman-group1-sha1',
 )
 
 paramiko.transport.Transport._preferred_keys = (
-    'ssh-rsa'
+    'ssh-rsa',
 )
 
 device_ip = "10.0.15.61"
