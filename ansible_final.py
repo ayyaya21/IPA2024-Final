@@ -1,12 +1,15 @@
 import subprocess
 
+STUDENT_ID = "66070221"
+
 def showrun():
-    # read https://www.datacamp.com/tutorial/python-subprocess to learn more about subprocess
-    command = ['ansible-playbook', 'playbook.yaml']
+    playbook_file = "playbook.yaml"
+    command = ["ansible-playbook", playbook_file]
     result = subprocess.run(command, capture_output=True, text=True)
-    result = result.stdout
-    if 'ok=2' in result:
-        filename = f"show_run_66070221_R1-Exam.txt"
+    output = result.stdout + result.stderr
+    if "FAILED=0" in output:
+        router_name = "R1-Exam"
+        filename = f"show_run_{STUDENT_ID}_{router_name}.txt"
         return filename
     else:
         return "Error: Ansible"
