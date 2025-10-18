@@ -2,14 +2,10 @@ import json
 import requests
 requests.packages.urllib3.disable_warnings()
 
-# Router IP Address is 10.0.15.181-184
 api_url = "https://10.0.15.61/"
 
-# the RESTCONF HTTP headers, including the Accept and Content-Type
-# Two YANG data formats (JSON and XML) work with RESTCONF 
 headers = {'Content-Type': 'application/yang-data+json', 'Accept': 'application/yang-data+json' }
 basicauth = ("admin", "cisco")
-
 
 def create():
     yangConfig = {
@@ -62,11 +58,10 @@ def delete():
 
 def enable():
     yangConfig = {
-        "ietf-interfaces:interface": {
-            "name": "Loopback66070221",
-            "type": "iana-if-type:softwareLoopback",
-            "enabled": True
-        }
+      "ietf-interfaces:interface": {
+        "type": "iana-if-type:softwareLoopback",
+        "enabled": True
+      }
     }
 
     resp = requests.put(
@@ -87,11 +82,10 @@ def enable():
 
 def disable():
     yangConfig = {
-        "ietf-interfaces:interface": {
-            "name": "Loopback66070221",
-            "type": "iana-if-type:softwareLoopback",
-            "enabled": False
-        }
+      "ietf-interfaces:interface": {
+        "type": "iana-if-type:softwareLoopback",
+        "enabled": False
+      }
     }
 
     resp = requests.put(
