@@ -36,3 +36,5 @@ def gigabit_status():
         )
         pprint(ans)
         return ans
+
+gigabit_status()
