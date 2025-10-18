@@ -5,13 +5,13 @@
   connection: local
 
   tasks:
-  - name: SHOW RUNNING-CONFIG 
-    ios_command:
-      commands:
-        - show running-config
-    register: output
+   - name: SHOW RUNNING-CONFIG 
+     ios_command:
+       commands:
+         - show running-config
+     register: output
 
-  - name: SAVE OUTPUT
-    copy: 
-      content: "{{ output.stdout[0] }}"
-      dest: "show_run_66070221_R1-Exam.txt"
+   - name: SAVE OUTPUT
+     copy: 
+       content: "{{ output.stdout[0] }}"
+       dest: "show_run_66070221_R1-Exam.txt"
