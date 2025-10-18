@@ -1,5 +1,14 @@
 from netmiko import ConnectHandler
 from pprint import pprint
+import paramiko
+
+paramiko.transport.Transport._preferred_kex = (
+    'diffie-hellman-group14-sha1'
+)
+
+paramiko.transport.Transport._preferred_keys = (
+    'ssh-rsa'
+)
 
 device_ip = "10.0.15.61"
 username = "admin"
@@ -7,7 +16,7 @@ password = "cisco"
 
 device_params = {
     "device_type": "cisco_ios",
-    "ip": device_ip,
+    "host": device_ip,
     "username": username,
     "password": password,
 }
