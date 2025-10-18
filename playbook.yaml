@@ -2,16 +2,16 @@
 - name: AUTOMATIC BACKUP OF RUNNING-CONFIG
   hosts: R1-Exam
   gather_facts: false
-  connection: local
+  connection: network_cli
  
   tasks:
    - name: DISPLAYING THE RUNNING-CONFIG
-     ios_command:
+     cisco.ios.ios_command:
        commands:
          - show running-config  
      register: config
  
    - name: SAVE OUTPUT
-     copy:
-       content: "{{ config.stdout[0] }}"
-       dest: "show_run_66070221_R1-Exam.txt"
+     ansible.builtin.copy:
+        content: "{{ config.stdout[0] }}"
+        dest: "show_run_66070221_R1-Exam.txt"
