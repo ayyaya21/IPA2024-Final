@@ -7,7 +7,7 @@
 # 1. Import libraries for API requests, JSON formatting, time, os, (restconf_final or netconf_final), netmiko_final, and ansible_final.
 
 from restconf_final import *
-from netmiko_final import *
+from netmiko_final import gigabit_status
 import os
 import time
 from dotenv import load_dotenv
