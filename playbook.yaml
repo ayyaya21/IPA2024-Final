@@ -1,17 +1,17 @@
 ---
-- name: Show run
+- name: AUTOMATIC BACKUP OF RUNNING-CONFIG
   hosts: R1-Exam
   gather_facts: false
   connection: local
-
+ 
   tasks:
-   - name: SHOW RUNNING-CONFIG 
+   - name: DISPLAYING THE RUNNING-CONFIG
      ios_command:
        commands:
-         - show running-config
-     register: output
-
+         - show running-config  
+     register: config
+ 
    - name: SAVE OUTPUT
-     copy: 
-       content: "{{ output.stdout[0] }}"
+     copy:
+       content: "{{ config.stdout[0] }}"
        dest: "show_run_66070221_R1-Exam.txt"
